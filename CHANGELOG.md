@@ -8,6 +8,19 @@ Versions follow `MAJOR.MINOR.PATCH`: incompatible workflow changes increment MAJ
 
 No changes recorded yet.
 
+## 1.0.2 — 2026-10-27
+
+### Documentation
+
+- Reworked the public README to explain the problems the skill addresses, its workflow, and observable expectations.
+- Added an illustrative before-and-after prompt, examples across domains, guidance on when to use the skill, and practical tradeoffs.
+- Made versioned ZIP installation easier to find and retained source attribution, LinkedIn creator links, and the corrected professional titles.
+- Clarified that the Karpathy-inspired guidelines are a community adaptation, not an official Karpathy skill.
+
+### Existing users
+
+The skill's execution and approval behavior are unchanged. Updating is optional; install v1.0.2 for the revised documentation.
+
 ## 1.0.1 — 2026-10-27
 
 ### Changed
@@ -44,3 +57,5 @@ This is the first versioned release. Users who installed an earlier unversioned 
 [1.0.0]: https://github.com/jovenleewj-png/ambitious-prompt/releases/tag/v1.0.0
 
 [1.0.1]: https://github.com/jovenleewj-png/ambitious-prompt/releases/tag/v1.0.1
+
+[1.0.2]: https://github.com/jovenleewj-png/ambitious-prompt/releases/tag/v1.0.2
