@@ -1,6 +1,6 @@
 # Ambitious Prompt
 
-### By [Joven Lee Wei Jun](https://askjoven.ai/)
+### By [Joven lee](https://www.linkedin.com/in/jovenleeweijun/)
 
 Turn an everyday request into a focused, domain-informed prompt. Review the rewritten prompt, approve it, then let your assistant execute.
 
