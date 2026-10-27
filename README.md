@@ -21,7 +21,7 @@ Small, fully specified edits stay small. Missing evidence stays explicit. Browsi
 
 **Joven Lee Wei Jun** is **Chief Research & Revenue Officer of Cookiy Labs** and **President of Cookiy AI**, working at the intersection of market research, B2B growth, and applied AI. He brings more than 15 years of experience, with career chapters at Nielsen and NielsenIQ, Statista, and Cint.
 
-His work connects customer understanding with commercial strategy: what people value, what businesses should build, and how to bring it to market. Through [AskJoven.ai](https://askjoven.ai/), he shares practical thinking on pricing, research operations, go-to-market strategy, and applied AI.
+His work connects customer understanding with commercial strategy: what people value, what businesses should build, and how to bring it to market. His areas of work include pricing, research operations, go-to-market strategy, and applied AI.
 
 Joven commissioned this skill to make ambitious AI use practical: stronger questions, relevant expertise, clear evidence, and human control over execution.
 
@@ -76,7 +76,7 @@ Provide [SKILL.md](SKILL.md), its linked references, and your request to a model
 
 ## Release log
 
-Current version: **1.0.0**. Read [CHANGELOG.md](CHANGELOG.md) for significant changes and upgrade notes, or visit [GitHub Releases](https://github.com/jovenleewj-png/ambitious-prompt/releases) for versioned downloads.
+Current version: **1.0.1**. Read [CHANGELOG.md](CHANGELOG.md) for significant changes and upgrade notes, or visit [GitHub Releases](https://github.com/jovenleewj-png/ambitious-prompt/releases) for versioned downloads.
 
 Each published release includes notes explaining what changed and whether existing users need to update or reinstall their skill. Small documentation corrections may be grouped into the next release.
 

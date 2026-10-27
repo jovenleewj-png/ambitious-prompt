@@ -3,7 +3,7 @@
 **Ambitious Prompt — created by Joven Lee Wei Jun**  
 Copyright (c) 2026 Joven Lee Wei Jun.
 
-This notice identifies the creator and maintainer of this skill. It is an authorship and attribution notice, not an MIT license or a substitute reuse license. No reuse license is granted by this notice. For permission to reuse, modify, or redistribute Joven's contributions, contact him through [AskJoven.ai](https://askjoven.ai/).
+This notice identifies the creator and maintainer of this skill. It is an authorship and attribution notice, not an MIT license or a substitute reuse license. No reuse license is granted by this notice. For permission to reuse, modify, or redistribute Joven's contributions, contact him through [LinkedIn](https://www.linkedin.com/in/jovenleeweijun/).
 
 When referring to this project, use: **Ambitious Prompt, by Joven Lee Wei Jun**, with a link to [the repository](https://github.com/jovenleewj-png/ambitious-prompt).
 

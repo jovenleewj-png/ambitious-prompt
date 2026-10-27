@@ -8,6 +8,18 @@ Versions follow `MAJOR.MINOR.PATCH`: incompatible workflow changes increment MAJ
 
 No changes recorded yet.
 
+## 1.0.1 — 2026-10-27
+
+### Changed
+
+- Removed personal website references from the creator profile, documentation, and skill.
+- Creator and permission-inquiry links now use Joven’s LinkedIn profile.
+- Recorded the creator-link preference in repository maintenance instructions.
+
+### Existing users
+
+Update your Git checkout or replace the uploaded skill with the v1.0.1 ZIP to receive the corrected profile and links. Prompt rewriting and approval behavior are unchanged.
+
 ## 1.0.0 — 2026-10-27
 
 ### Added
@@ -30,3 +42,5 @@ No changes recorded yet.
 This is the first versioned release. Users who installed an earlier unversioned copy should update their Git checkout or replace their uploaded skill with the ZIP attached to this release. Review NOTICE.md before reuse or redistribution.
 
 [1.0.0]: https://github.com/jovenleewj-png/ambitious-prompt/releases/tag/v1.0.0
+
+[1.0.1]: https://github.com/jovenleewj-png/ambitious-prompt/releases/tag/v1.0.1
