@@ -1,7 +1,7 @@
 ---
 name: ambitious-prompt
 metadata:
-  version: "1.0.2"
+  version: "1.0.3"
   author: Joven Lee Wei Jun
 description: Rewrite requests into domain-informed, model-agnostic prompts using calibrated ambition and Karpathy-inspired discipline, then ask for approval before execution. Use for prompt improvement requests, $ambitious-prompt, or each new substantive request in a chat where the user enabled this skill. Approval replies and prompt revisions continue the current workflow.
 ---

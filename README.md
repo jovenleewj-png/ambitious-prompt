@@ -44,19 +44,83 @@ The skill selects what helps. It keeps the requested deliverable, treats stretch
 
 ## Before and after
 
-The following is an illustrative rewrite, not a claim that an analysis has been completed.
+This illustrative example shows a substantial request receiving a substantial brief. It is not a completed diagnosis or a claim that any business records have been inspected. The eventual rewrite should reflect the actual context and verified domain research available in that session.
 
-**Your request**
+**Before — your request**
 
-> Help me understand why customers are leaving.
+> Our customer onboarding takes too long, and teams keep redoing work. Use our existing onboarding records to find where the process breaks down and propose a better handoff from sales to implementation. Do not add headcount or change our systems.
 
-**A stronger brief**
+**After — the rewritten prompt**
 
-> Analyze the customer and billing data I provide to establish whether churn has increased, which segments explain the change, and which explanations the evidence supports. Define customer churn and revenue churn separately; compare cohorts at similar tenure; and reconcile headline numbers to the source records.
->
-> Use support tickets or interview evidence to test explanations, while accounting for selection bias. Separate observed patterns from causal claims. Recommend the next actions and the evidence that would change the recommendation. If required inputs are missing, request them rather than inventing findings.
+<details open>
+<summary><strong>Diagnose the handoff, identify the causes of delay, and design a testable improvement</strong></summary>
 
-The assistant then asks you to approve the prompt before doing the analysis. In actual use, any relevant domain research happens before the rewrite; the prompt includes source findings the next model may need.
+Work from the onboarding records I provide to determine where the sales-to-implementation handoff creates avoidable delay or rework, and propose a better process within our existing headcount and systems. The outcome is a handoff the implementation team can act on without repeatedly returning to sales for information.
+
+### 1. Establish what the records can tell us
+
+Identify the available source material: signed scope and sales commitments, handoff forms, implementation tickets, milestone histories, customer communications, ownership changes, and any existing process documentation. List what is actually available and the period it covers. Request the smallest set of missing inputs that would materially change the diagnosis.
+
+Recover the agreed meaning of “ready for implementation” and “live” from our existing process. Separate customer-requested pauses, external dependencies, and product limitations from internal handoff failures. Flag inconsistent timestamps and missing histories before comparing projects. Preserve source records and existing versions.
+
+### 2. Reconstruct the work before assigning blame
+
+Build a timeline for each usable onboarding case, from the relevant sales commitment through handoff, implementation, and go-live. Trace each material issue through:
+
+**Commitment → required input → handoff → receiving owner → implementation dependency → customer outcome.**
+
+For each transition, distinguish elapsed time, recorded active work, waiting, and rework. If active effort was not recorded, report it as unknown rather than inferring it from elapsed time.
+
+Compare cases by characteristics supported by the records, such as integration complexity, customer readiness, or implementation type. Show case counts, missing-data coverage, medians, and the distribution of elapsed times where the data supports them. Check whether a few exceptional projects explain the apparent slowdown. Avoid comparing unlike projects or treating the most frequently documented complaint as the largest source of delay.
+
+### 3. Diagnose the failure mechanisms
+
+Evaluate whether each handoff contains the information needed to begin, has a clear receiving owner, matches the signed scope, exposes dependencies, and records acceptance or rejection. Define each criterion and its observable evidence before assessing cases; use “not assessable” when the records cannot support a judgment.
+
+Distinguish recurring mechanisms such as incomplete inputs, conflicting promises, unclear ownership, sequencing errors, approval queues, and capacity constraints. Support each priority diagnosis with source references, an affected-case count, its contribution to observed delay or rework where measurable, and a confidence statement.
+
+Include successful cases and counterexamples. A late project with a complete handoff may challenge a handoff-based explanation. Separate observed failures from hypotheses about their causes; do not attribute poor performance to a team or individual without evidence.
+
+### 4. Design the smallest useful change
+
+For the strongest supported bottlenecks, show:
+
+- **Current practice:** the actual field, instruction, ownership rule, or transition causing difficulty, with its source reference.
+- **Failure mechanism:** how it creates waiting, rework, or an incorrect commitment.
+- **Proposed change:** revised handoff information, acceptance criteria, routing, or escalation using our existing systems.
+- **Expected effect:** the mechanism by which the change could help; quantify only what the records support and label estimates.
+- **Cost and tradeoffs:** added work, shifted responsibility, customer friction, and any new failure mode.
+- **Verification:** the observation that would confirm or challenge the expected improvement.
+
+Consider information quality and workflow design before adding approvals or forms. Check whether a change removes work or simply moves the queue to another team. Keep headcount and systems fixed; identify any improvement that cannot meet those constraints as outside this proposal.
+
+### 5. Test against history and propose a bounded pilot
+
+Replay the proposed handoff rules against historical cases to see which failures they would have flagged, which successful cases they would have blocked unnecessarily, and which delays they would not address. Where there are enough cases, reserve a separate set for checking the revised rules after development. If the sample is too small, disclose the limit instead of claiming generalization.
+
+Historical replay can test whether missing information would have been detected; it cannot prove that time would have been saved. Design a pilot that measures both go-live time and staff effort, with safeguards for scope errors and customer experience. Account for differences in project complexity and customer readiness; explain the limits of causal inference if comparable allocation is not feasible.
+
+Propose the pilot duration, owners, success thresholds, and rollback triggers from the baseline evidence. Label these as proposals for approval. Do not invent a percentage improvement, promise savings, or claim that the pilot has already run.
+
+### 6. Deliver a decision we can act on
+
+Produce a concise decision brief with:
+
+- A reconciled baseline and the most consequential supported bottlenecks.
+- An evidence-linked current-state process map and prioritized diagnosis.
+- Concrete before-and-after handoff changes with ownership and tradeoffs.
+- The results of any historical checks actually performed.
+- A proposed pilot, acceptance criteria, rollback conditions, and remaining evidence gaps.
+
+Keep detailed case tracing in a supporting table so the main brief remains readable. Distinguish verified observations, estimated effects, and proposed actions. If the records do not establish a cause, identify the evidence that would discriminate between the remaining explanations.
+
+Use the supplied records and authorized tools to carry out the diagnosis and prepare the proposal. Stop when the brief and its evidence checks are complete, or report the specific missing inputs that block a defensible conclusion. Obtain separate approval before changing live workflows, contacting staff or customers, or starting the pilot.
+
+</details>
+
+**What changed:** the rewrite defines the operational outcome, names the raw evidence, specifies a diagnostic method, tests alternative explanations, and connects each proposed change to a check. It also asks for historical validation and a bounded pilot without treating either as proof of benefits that have not been observed.
+
+The skill shows this prompt for approval before starting the diagnosis. This level of detail fits a cross-functional operational problem; simpler tasks receive shorter prompts.
 
 ### Other requests it can improve
 
@@ -140,7 +204,7 @@ His work connects customer understanding with commercial strategy, research oper
 
 ## Releases
 
-Current version: **1.0.2**. Each published release includes notes about significant changes, any update or reinstallation needed, and an installable skill ZIP.
+Current version: **1.0.3**. Each published release includes notes about significant changes, any update or reinstallation needed, and an installable skill ZIP.
 
 [Changelog](CHANGELOG.md) · [GitHub Releases](https://github.com/jovenleewj-png/ambitious-prompt/releases)
 

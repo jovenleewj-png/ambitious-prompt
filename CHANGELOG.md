@@ -8,6 +8,19 @@ Versions follow `MAJOR.MINOR.PATCH`: incompatible workflow changes increment MAJ
 
 No changes recorded yet.
 
+## 1.0.3 — 2026-10-27
+
+### Documentation
+
+- Replaced the short churn example with an in-depth sales-to-implementation handoff example in a different domain.
+- Demonstrated source discovery, case-level process reconstruction, diagnostic criteria, counterexamples, concrete improvements, historical checks, and a bounded pilot.
+- Distinguished historical validation from unproven benefits and retained the approval boundary for live changes.
+- Marked the example as illustrative and kept private project details out of the public documentation.
+
+### Existing users
+
+Prompt rewriting and execution behavior are unchanged. Updating is optional; install v1.0.3 for the stronger worked example.
+
 ## 1.0.2 — 2026-10-27
 
 ### Documentation
@@ -59,3 +72,5 @@ This is the first versioned release. Users who installed an earlier unversioned 
 [1.0.1]: https://github.com/jovenleewj-png/ambitious-prompt/releases/tag/v1.0.1
 
 [1.0.2]: https://github.com/jovenleewj-png/ambitious-prompt/releases/tag/v1.0.2
+
+[1.0.3]: https://github.com/jovenleewj-png/ambitious-prompt/releases/tag/v1.0.3
