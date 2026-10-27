@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ambitious Prompt"
+  short_description: "Rewrite requests with domain expertise and clear checks"
+  default_prompt: "Use $ambitious-prompt to improve my request, show the prompt for approval, and execute after I approve."
