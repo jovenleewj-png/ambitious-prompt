@@ -10,7 +10,7 @@ The skill combines selective ambition with practical discipline: research the re
 
 1. Understands the outcome, audience, constraints, and available inputs.
 2. Researches domain methods when they would materially improve the prompt.
-3. Calibrates speed, altitude, depth, and range to the request.
+3. Calibrates speed, altitude, depth, and range to the request, using [Felix Rieseberg’s article](https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/) as a design reference for the skill.
 4. Applies four Karpathy-inspired disciplines: think before acting, simplicity first, surgical changes, and goal-driven execution.
 5. Shows a self-contained prompt and asks for approval.
 6. Executes only after approval, then reports verification and limitations.

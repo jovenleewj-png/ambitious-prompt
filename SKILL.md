@@ -34,7 +34,7 @@ Carry the useful source findings into the rewritten prompt with direct links and
 
 ## 3. Calibrate ambition
 
-Use these dimensions selectively, following Felix Rieseberg's framework:
+Use these dimensions selectively, following the framework in [Felix Rieseberg’s article](https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/), which serves as a design reference for this skill:
 
 - **Speed:** remove avoidable work while meeting the quality bar.
 - **Altitude:** connect the deliverable to the decision or outcome it serves.
