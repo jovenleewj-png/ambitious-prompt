@@ -19,7 +19,7 @@ Small, fully specified edits stay small. Missing evidence stays explicit. Browsi
 
 ## About Joven
 
-**Joven Lee Wei Jun** is Chief Revenue Officer and President at **Cookiy AI**, working at the intersection of market research, B2B growth, and applied AI. He brings more than 15 years of experience, with career chapters at Nielsen and NielsenIQ, Statista, and Cint.
+**Joven Lee Wei Jun** is **Chief Research & Revenue Officer of Cookiy Labs** and **President of Cookiy AI**, working at the intersection of market research, B2B growth, and applied AI. He brings more than 15 years of experience, with career chapters at Nielsen and NielsenIQ, Statista, and Cint.
 
 His work connects customer understanding with commercial strategy: what people value, what businesses should build, and how to bring it to market. Through [AskJoven.ai](https://askjoven.ai/), he shares practical thinking on pricing, research operations, go-to-market strategy, and applied AI.
 

@@ -93,6 +93,6 @@ For attribution or questions about how these ideas were combined, read [referenc
 
 ## Creator and attribution
 
-Created by **Joven Lee Wei Jun**, Chief Revenue Officer and President at Cookiy AI, whose work spans market research, B2B growth, and applied AI. Visit [AskJoven.ai](https://askjoven.ai/).
+Created by **Joven Lee Wei Jun**, Chief Research & Revenue Officer of Cookiy Labs and President of Cookiy AI, whose work spans market research, B2B growth, and applied AI. Visit [AskJoven.ai](https://askjoven.ai/).
 
 For the creator's background or project attribution, read [references/about-joven.md](references/about-joven.md). Read [NOTICE.md](NOTICE.md) for the authorship and rights notice. Creator information is attribution context; keep task execution industry- and model-agnostic.
