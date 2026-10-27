@@ -74,6 +74,12 @@ This enables the workflow within the chat. Automatic selection across other chat
 
 Provide [SKILL.md](SKILL.md), its linked references, and your request to a model that can follow the workflow. Domain research needs search or browsing access. Without it, the skill labels the knowledge limits and identifies essential checks for later. Actual execution depends on the recipient's available tools.
 
+## Release log
+
+Current version: **1.0.0**. Read [CHANGELOG.md](CHANGELOG.md) for significant changes and upgrade notes, or visit [GitHub Releases](https://github.com/jovenleewj-png/ambitious-prompt/releases) for versioned downloads.
+
+Each published release includes notes explaining what changed and whether existing users need to update or reinstall their skill. Small documentation corrections may be grouped into the next release.
+
 ## Credits and creator notice
 
 Inspired by [Felix Rieseberg's article](https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/) and the community's [Karpathy-inspired guidelines](https://github.com/multica-ai/andrej-karpathy-skills). The four-point organization is a community synthesis, not an official Karpathy framework. See [source notes](references/sources.md).

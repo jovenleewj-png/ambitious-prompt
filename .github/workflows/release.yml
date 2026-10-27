@@ -1,0 +1,46 @@
+name: Publish release
+
+on:
+  push:
+    tags:
+      - 'v[0-9]*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Prepare release notes and skill ZIP
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          python3 - <<'PYTHON'
+          import os, re, zipfile
+          from pathlib import Path
+          tag = os.environ['RELEASE_TAG']
+          if not re.fullmatch(r'v[0-9]+\.[0-9]+\.[0-9]+', tag):
+              raise SystemExit('Expected a vMAJOR.MINOR.PATCH tag')
+          version = tag[1:]
+          skill = Path('SKILL.md').read_text()
+          if f'  version: "{version}"' not in skill:
+              raise SystemExit('Tag does not match skill metadata.version')
+          log = Path('CHANGELOG.md').read_text()
+          section = re.search(r'^## ' + re.escape(version) + r' — [0-9-]+\n(.*?)(?=^## |\Z)', log, re.M | re.S)
+          if not section or not section.group(1).strip():
+              raise SystemExit('Missing release notes for this version')
+          Path('release-notes.md').write_text(section.group(1).strip() + '\n')
+          files = [Path(p) for p in ['SKILL.md', 'README.md', 'NOTICE.md', 'CHANGELOG.md']]
+          for folder in ['agents', 'references']:
+              files.extend(p for p in Path(folder).rglob('*') if p.is_file())
+          with zipfile.ZipFile('ambitious-prompt.zip', 'w', zipfile.ZIP_DEFLATED) as archive:
+              for path in sorted(files):
+                  archive.write(path, Path('ambitious-prompt') / path)
+          PYTHON
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: gh release create "$RELEASE_TAG" ambitious-prompt.zip --verify-tag --title "Ambitious Prompt $RELEASE_TAG" --notes-file release-notes.md --latest
